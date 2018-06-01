@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C8C9BB9F2F7D0BC3CB5EED3 /* Pods_DadJokesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F8169C7608BC278EE8E5FD /* Pods_DadJokesTests.framework */; };
-		980265C84635F1549A91107B /* Pods_DadJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD147FB0A87F2B985C61EB3 /* Pods_DadJokes.framework */; };
 		BDD5BDAE20C0BBD700C11501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDAD20C0BBD700C11501 /* AppDelegate.swift */; };
 		BDD5BDB020C0BBD700C11501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDAF20C0BBD700C11501 /* ViewController.swift */; };
 		BDD5BDB320C0BBD700C11501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD5BDB120C0BBD700C11501 /* Main.storyboard */; };
-		BDD5BDB620C0BBD700C11501 /* DadJokes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDB420C0BBD700C11501 /* DadJokes.xcdatamodeld */; };
 		BDD5BDB820C0BBD800C11501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD5BDB720C0BBD800C11501 /* Assets.xcassets */; };
 		BDD5BDBB20C0BBD800C11501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD5BDB920C0BBD800C11501 /* LaunchScreen.storyboard */; };
 		BDD5BDC620C0BBD800C11501 /* DadJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDC520C0BBD800C11501 /* DadJokesTests.swift */; };
 		BDD5BDD120C0BBD800C11501 /* DadJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDD020C0BBD800C11501 /* DadJokesUITests.swift */; };
-		BE8BAA5E84B6ECC5C5886323 /* Pods_DadJokesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669172B93AC19F7D8C1AAC36 /* Pods_DadJokesUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,19 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		062D796407FB3EEC8ED6DC28 /* Pods-DadJokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DadJokes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DadJokes/Pods-DadJokes.debug.xcconfig"; sourceTree = "<group>"; };
 		61F8169C7608BC278EE8E5FD /* Pods_DadJokesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DadJokesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		669172B93AC19F7D8C1AAC36 /* Pods_DadJokesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DadJokesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD147FB0A87F2B985C61EB3 /* Pods_DadJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DadJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B619D423004CA14A82926B2 /* Pods-DadJokesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DadJokesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DadJokesUITests/Pods-DadJokesUITests.release.xcconfig"; sourceTree = "<group>"; };
-		93805EAD7D8451EBCA9BC0A3 /* Pods-DadJokesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DadJokesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DadJokesTests/Pods-DadJokesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		95CC8683FC1356283AED9D85 /* Pods-DadJokesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DadJokesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DadJokesTests/Pods-DadJokesTests.release.xcconfig"; sourceTree = "<group>"; };
-		A44DAC52313FCC956315E446 /* Pods-DadJokesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DadJokesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DadJokesUITests/Pods-DadJokesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDD5BDAA20C0BBD700C11501 /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD5BDAD20C0BBD700C11501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD5BDAF20C0BBD700C11501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDD5BDB220C0BBD700C11501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BDD5BDB520C0BBD700C11501 /* DadJokes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DadJokes.xcdatamodel; sourceTree = "<group>"; };
 		BDD5BDB720C0BBD800C11501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD5BDBA20C0BBD800C11501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD5BDBC20C0BBD800C11501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +50,6 @@
 		BDD5BDCC20C0BBD800C11501 /* DadJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD5BDD020C0BBD800C11501 /* DadJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITests.swift; sourceTree = "<group>"; };
 		BDD5BDD220C0BBD800C11501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8C78008C7B78ABD5C03EAF2 /* Pods-DadJokes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DadJokes.release.xcconfig"; path = "Pods/Target Support Files/Pods-DadJokes/Pods-DadJokes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980265C84635F1549A91107B /* Pods_DadJokes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8C9BB9F2F7D0BC3CB5EED3 /* Pods_DadJokesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE8BAA5E84B6ECC5C5886323 /* Pods_DadJokesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,19 +87,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A5D8829BBBEDD3116E831F84 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				062D796407FB3EEC8ED6DC28 /* Pods-DadJokes.debug.xcconfig */,
-				C8C78008C7B78ABD5C03EAF2 /* Pods-DadJokes.release.xcconfig */,
-				93805EAD7D8451EBCA9BC0A3 /* Pods-DadJokesTests.debug.xcconfig */,
-				95CC8683FC1356283AED9D85 /* Pods-DadJokesTests.release.xcconfig */,
-				A44DAC52313FCC956315E446 /* Pods-DadJokesUITests.debug.xcconfig */,
-				8B619D423004CA14A82926B2 /* Pods-DadJokesUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		BDD5BDA120C0BBD700C11501 = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +94,6 @@
 				BDD5BDC420C0BBD800C11501 /* DadJokesTests */,
 				BDD5BDCF20C0BBD800C11501 /* DadJokesUITests */,
 				BDD5BDAB20C0BBD700C11501 /* Products */,
-				A5D8829BBBEDD3116E831F84 /* Pods */,
 				69135F8BA2E50C8C17ED4968 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -145,7 +117,6 @@
 				BDD5BDB720C0BBD800C11501 /* Assets.xcassets */,
 				BDD5BDB920C0BBD800C11501 /* LaunchScreen.storyboard */,
 				BDD5BDBC20C0BBD800C11501 /* Info.plist */,
-				BDD5BDB420C0BBD700C11501 /* DadJokes.xcdatamodeld */,
 			);
 			path = DadJokes;
 			sourceTree = "<group>";
@@ -175,7 +146,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDD5BDD520C0BBD800C11501 /* Build configuration list for PBXNativeTarget "DadJokes" */;
 			buildPhases = (
-				B7EAB78CA7EF40651A0FF199 /* [CP] Check Pods Manifest.lock */,
 				BDD5BDA620C0BBD700C11501 /* Sources */,
 				BDD5BDA720C0BBD700C11501 /* Frameworks */,
 				BDD5BDA820C0BBD700C11501 /* Resources */,
@@ -193,7 +163,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDD5BDD820C0BBD800C11501 /* Build configuration list for PBXNativeTarget "DadJokesTests" */;
 			buildPhases = (
-				50D42D079F8622FB4E1867AA /* [CP] Check Pods Manifest.lock */,
 				BDD5BDBD20C0BBD800C11501 /* Sources */,
 				BDD5BDBE20C0BBD800C11501 /* Frameworks */,
 				BDD5BDBF20C0BBD800C11501 /* Resources */,
@@ -212,7 +181,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDD5BDDB20C0BBD800C11501 /* Build configuration list for PBXNativeTarget "DadJokesUITests" */;
 			buildPhases = (
-				18F5A96828D4670D326250FE /* [CP] Check Pods Manifest.lock */,
 				BDD5BDC820C0BBD800C11501 /* Sources */,
 				BDD5BDC920C0BBD800C11501 /* Frameworks */,
 				BDD5BDCA20C0BBD800C11501 /* Resources */,
@@ -297,69 +265,11 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		18F5A96828D4670D326250FE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DadJokesUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		50D42D079F8622FB4E1867AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DadJokesTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7EAB78CA7EF40651A0FF199 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DadJokes-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BDD5BDA620C0BBD700C11501 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD5BDB620C0BBD700C11501 /* DadJokes.xcdatamodeld in Sources */,
 				BDD5BDB020C0BBD700C11501 /* ViewController.swift in Sources */,
 				BDD5BDAE20C0BBD700C11501 /* AppDelegate.swift in Sources */,
 			);
@@ -532,7 +442,6 @@
 		};
 		BDD5BDD620C0BBD800C11501 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 062D796407FB3EEC8ED6DC28 /* Pods-DadJokes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,7 +459,6 @@
 		};
 		BDD5BDD720C0BBD800C11501 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8C78008C7B78ABD5C03EAF2 /* Pods-DadJokes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,7 +476,6 @@
 		};
 		BDD5BDD920C0BBD800C11501 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93805EAD7D8451EBCA9BC0A3 /* Pods-DadJokesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -589,7 +496,6 @@
 		};
 		BDD5BDDA20C0BBD800C11501 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95CC8683FC1356283AED9D85 /* Pods-DadJokesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -610,7 +516,6 @@
 		};
 		BDD5BDDC20C0BBD800C11501 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A44DAC52313FCC956315E446 /* Pods-DadJokesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -630,7 +535,6 @@
 		};
 		BDD5BDDD20C0BBD800C11501 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B619D423004CA14A82926B2 /* Pods-DadJokesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -688,19 +592,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BDD5BDB420C0BBD700C11501 /* DadJokes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BDD5BDB520C0BBD700C11501 /* DadJokes.xcdatamodel */,
-			);
-			currentVersion = BDD5BDB520C0BBD700C11501 /* DadJokes.xcdatamodel */;
-			path = DadJokes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BDD5BDA220C0BBD700C11501 /* Project object */;
 }
