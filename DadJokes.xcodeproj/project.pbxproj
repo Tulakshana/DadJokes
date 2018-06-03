@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0F9B0320C37FDB00EC4F0C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F9B0220C37FDB00EC4F0C /* UIViewControllerExtension.swift */; };
+		BD0F9B0520C39B1500EC4F0C /* RandomJokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F9B0420C39B1500EC4F0C /* RandomJokeUITests.swift */; };
+		BD0F9B0620C39B3500EC4F0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDAF20C0BBD700C11501 /* ViewController.swift */; };
+		BD0F9B0720C39B4500EC4F0C /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37679920C1A53200066A1A /* JokeService.swift */; };
+		BD0F9B0820C39B4900EC4F0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3767A320C1A59900066A1A /* Constants.swift */; };
+		BD0F9B0A20C39B5300EC4F0C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F9B0220C37FDB00EC4F0C /* UIViewControllerExtension.swift */; };
+		BD37679C20C1A53300066A1A /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37679920C1A53200066A1A /* JokeService.swift */; };
+		BD3767A020C1A54300066A1A /* JokeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37679F20C1A54300066A1A /* JokeServiceTests.swift */; };
+		BD3767A220C1A54D00066A1A /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37679920C1A53200066A1A /* JokeService.swift */; };
+		BD3767A420C1A59900066A1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3767A320C1A59900066A1A /* Constants.swift */; };
+		BD3767A520C1A5AA00066A1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3767A320C1A59900066A1A /* Constants.swift */; };
 		BDD5BDAE20C0BBD700C11501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDAD20C0BBD700C11501 /* AppDelegate.swift */; };
 		BDD5BDB020C0BBD700C11501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDAF20C0BBD700C11501 /* ViewController.swift */; };
 		BDD5BDB320C0BBD700C11501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD5BDB120C0BBD700C11501 /* Main.storyboard */; };
 		BDD5BDB820C0BBD800C11501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD5BDB720C0BBD800C11501 /* Assets.xcassets */; };
 		BDD5BDBB20C0BBD800C11501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD5BDB920C0BBD800C11501 /* LaunchScreen.storyboard */; };
-		BDD5BDC620C0BBD800C11501 /* DadJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDC520C0BBD800C11501 /* DadJokesTests.swift */; };
-		BDD5BDD120C0BBD800C11501 /* DadJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5BDD020C0BBD800C11501 /* DadJokesUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,11 @@
 		61F8169C7608BC278EE8E5FD /* Pods_DadJokesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DadJokesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		669172B93AC19F7D8C1AAC36 /* Pods_DadJokesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DadJokesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD147FB0A87F2B985C61EB3 /* Pods_DadJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DadJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0F9B0220C37FDB00EC4F0C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		BD0F9B0420C39B1500EC4F0C /* RandomJokeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeUITests.swift; sourceTree = "<group>"; };
+		BD37679920C1A53200066A1A /* JokeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeService.swift; sourceTree = "<group>"; };
+		BD37679F20C1A54300066A1A /* JokeServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeServiceTests.swift; sourceTree = "<group>"; };
+		BD3767A320C1A59900066A1A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BDD5BDAA20C0BBD700C11501 /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD5BDAD20C0BBD700C11501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD5BDAF20C0BBD700C11501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,10 +59,8 @@
 		BDD5BDBA20C0BBD800C11501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD5BDBC20C0BBD800C11501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD5BDC120C0BBD800C11501 /* DadJokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDD5BDC520C0BBD800C11501 /* DadJokesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesTests.swift; sourceTree = "<group>"; };
 		BDD5BDC720C0BBD800C11501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD5BDCC20C0BBD800C11501 /* DadJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDD5BDD020C0BBD800C11501 /* DadJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITests.swift; sourceTree = "<group>"; };
 		BDD5BDD220C0BBD800C11501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +99,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD0F9B0120C37FB200EC4F0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD0F9B0220C37FDB00EC4F0C /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD37679820C1A53200066A1A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BD37679920C1A53200066A1A /* JokeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BD37679E20C1A54300066A1A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BD37679F20C1A54300066A1A /* JokeServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		BDD5BDA120C0BBD700C11501 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +147,9 @@
 		BDD5BDAC20C0BBD700C11501 /* DadJokes */ = {
 			isa = PBXGroup;
 			children = (
+				BD0F9B0120C37FB200EC4F0C /* Extensions */,
+				BD3767A320C1A59900066A1A /* Constants.swift */,
+				BD37679820C1A53200066A1A /* Service */,
 				BDD5BDAD20C0BBD700C11501 /* AppDelegate.swift */,
 				BDD5BDAF20C0BBD700C11501 /* ViewController.swift */,
 				BDD5BDB120C0BBD700C11501 /* Main.storyboard */,
@@ -124,7 +163,7 @@
 		BDD5BDC420C0BBD800C11501 /* DadJokesTests */ = {
 			isa = PBXGroup;
 			children = (
-				BDD5BDC520C0BBD800C11501 /* DadJokesTests.swift */,
+				BD37679E20C1A54300066A1A /* Service */,
 				BDD5BDC720C0BBD800C11501 /* Info.plist */,
 			);
 			path = DadJokesTests;
@@ -133,8 +172,8 @@
 		BDD5BDCF20C0BBD800C11501 /* DadJokesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BDD5BDD020C0BBD800C11501 /* DadJokesUITests.swift */,
 				BDD5BDD220C0BBD800C11501 /* Info.plist */,
+				BD0F9B0420C39B1500EC4F0C /* RandomJokeUITests.swift */,
 			);
 			path = DadJokesUITests;
 			sourceTree = "<group>";
@@ -270,6 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3767A420C1A59900066A1A /* Constants.swift in Sources */,
+				BD37679C20C1A53300066A1A /* JokeService.swift in Sources */,
+				BD0F9B0320C37FDB00EC4F0C /* UIViewControllerExtension.swift in Sources */,
 				BDD5BDB020C0BBD700C11501 /* ViewController.swift in Sources */,
 				BDD5BDAE20C0BBD700C11501 /* AppDelegate.swift in Sources */,
 			);
@@ -279,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD5BDC620C0BBD800C11501 /* DadJokesTests.swift in Sources */,
+				BD3767A520C1A5AA00066A1A /* Constants.swift in Sources */,
+				BD3767A020C1A54300066A1A /* JokeServiceTests.swift in Sources */,
+				BD3767A220C1A54D00066A1A /* JokeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD5BDD120C0BBD800C11501 /* DadJokesUITests.swift in Sources */,
+				BD0F9B0820C39B4900EC4F0C /* Constants.swift in Sources */,
+				BD0F9B0620C39B3500EC4F0C /* ViewController.swift in Sources */,
+				BD0F9B0A20C39B5300EC4F0C /* UIViewControllerExtension.swift in Sources */,
+				BD0F9B0720C39B4500EC4F0C /* JokeService.swift in Sources */,
+				BD0F9B0520C39B1500EC4F0C /* RandomJokeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,14 +1,14 @@
 //
-//  DadJokesUITests.swift
+//  RandomJokeUITests.swift
 //  DadJokesUITests
 //
-//  Created by Tulakshana Weerasooriya on 2018-05-31.
+//  Created by Tulakshana Weerasooriya on 2018-06-02.
 //  Copyright © 2018 Tula Weerasooriya. All rights reserved.
 //
 
 import XCTest
 
-class DadJokesUITests: XCTestCase {
+class RandomJokeUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -28,9 +28,14 @@ class DadJokesUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testNext() {
+        sleep(5)
+        XCUIApplication().buttons["NEXT"].tap()
+        XCTAssert(XCUIApplication().textViews["textView"].value != nil)
     }
     
+    func testLaunch() {
+        sleep(5)
+        XCTAssert(XCUIApplication().textViews["textView"].value != nil)
+    }
 }
