@@ -10,50 +10,60 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dad Jokes !!!-->
+        <!--A Random Joke !!!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Dad Jokes !!!" id="BYZ-38-t0r" customClass="ViewController" customModule="DadJokes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="A Random Joke !!!" id="BYZ-38-t0r" customClass="ViewController" customModule="DadJokes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZE-a2-zGu">
-                                <rect key="frame" x="130" y="114" width="114" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.18431372549019609" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="NEXT">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Why didn’t the skeleton cross the road? Because he had no guts." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L2x-W3-Ean">
                                 <rect key="frame" x="67" y="269" width="240" height="398"/>
                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.3411764706" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textView"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ozM-nR-HRU">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ozM-nR-HRU">
                                 <rect key="frame" x="169" y="211" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="T1M-nq-K86"/>
                                     <constraint firstAttribute="width" constant="37" id="Trc-2Q-so6"/>
                                 </constraints>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZE-a2-zGu">
+                                <rect key="frame" x="91" y="106" width="193" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="0.18431372549019609" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="327-Ky-IV0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextTappedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXd-Sp-e0g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686274509803" green="0.3411764705882353" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tZE-a2-zGu" secondAttribute="trailing" constant="91" id="NxN-JF-KjM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L2x-W3-Ean" secondAttribute="bottom" id="S2s-m4-baO"/>
+                            <constraint firstItem="tZE-a2-zGu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="dDd-hj-am2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L2x-W3-Ean" secondAttribute="trailing" constant="68" id="imX-ov-ls3"/>
                             <constraint firstItem="ozM-nR-HRU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k0O-yF-oox"/>
+                            <constraint firstItem="tZE-a2-zGu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="sdG-gR-6Fw"/>
                             <constraint firstItem="L2x-W3-Ean" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="v2m-Do-TsW"/>
                             <constraint firstItem="L2x-W3-Ean" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="205" id="wHZ-Va-Cta"/>
+                            <constraint firstItem="L2x-W3-Ean" firstAttribute="top" secondItem="ozM-nR-HRU" secondAttribute="bottom" constant="21" id="xog-ol-tNb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dad Jokes !!!" id="a0G-LP-iaT">
+                    <navigationItem key="navigationItem" title="A Random Joke !!!" id="a0G-LP-iaT">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="7ak-C4-MnT">
                             <connections>
                                 <segue destination="G7m-Ql-1gc" kind="show" id="qIB-Dw-GJ6"/>
@@ -62,6 +72,11 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ozM-nR-HRU" id="6r5-z1-tnN"/>
+                        <outlet property="btnNext" destination="tZE-a2-zGu" id="bDC-uM-3tl"/>
+                        <outlet property="jokeTextView" destination="L2x-W3-Ean" id="i3v-hy-0Xx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
