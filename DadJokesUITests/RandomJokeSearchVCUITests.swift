@@ -1,14 +1,14 @@
 //
-//  RandomJokeUITests.swift
+//  RandomJokeSearchVCUITests.swift
 //  DadJokesUITests
 //
-//  Created by Tulakshana Weerasooriya on 2018-06-02.
+//  Created by Tulakshana Weerasooriya on 2018-06-05.
 //  Copyright © 2018 Tula Weerasooriya. All rights reserved.
 //
 
 import XCTest
 
-class RandomJokeUITests: XCTestCase {
+class RandomJokeSearchVCUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -28,14 +28,19 @@ class RandomJokeUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testNext() {
-        sleep(5)
-        XCUIApplication().buttons["NEXT"].tap()
-        XCTAssert(XCUIApplication().textViews["textView"].value != nil)
-    }
     
-    func testLaunch() {
+    func testSearch() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["A Random Joke !!!"].buttons["Search"].tap()
+        
+        app.alerts["Search for a random joke"].textFields[Constants.searchInputAccessibilityIdentifier].typeText("elephant")
+        app.alerts["Search for a random joke"].buttons["Search"].tap()
+
         sleep(5)
-        XCTAssert(XCUIApplication().textViews["textView"].value != nil)
+        
+        if let text: String = XCUIApplication().textViews["textView"].value as? String {
+            XCTAssert(text.range(of: "elephant") != nil)
+        }
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ub-oa-5t0">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ub-oa-5t0">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,13 +13,13 @@
         <!--A Random Joke !!!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="A Random Joke !!!" id="BYZ-38-t0r" customClass="ViewController" customModule="DadJokes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="A Random Joke !!!" id="BYZ-38-t0r" customClass="RandomJokeVC" customModule="DadJokes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Why didn’t the skeleton cross the road? Because he had no guts." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L2x-W3-Ean">
-                                <rect key="frame" x="67" y="269" width="240" height="398"/>
+                                <rect key="frame" x="67" y="269" width="185" height="211"/>
                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.3411764706" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="textView"/>
@@ -28,14 +28,14 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ozM-nR-HRU">
-                                <rect key="frame" x="169" y="211" width="37" height="37"/>
+                                <rect key="frame" x="141.5" y="211" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="T1M-nq-K86"/>
                                     <constraint firstAttribute="width" constant="37" id="Trc-2Q-so6"/>
                                 </constraints>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZE-a2-zGu">
-                                <rect key="frame" x="91" y="106" width="193" height="64"/>
+                                <rect key="frame" x="91" y="106" width="138" height="64"/>
                                 <color key="backgroundColor" red="0.0" green="0.18431372549019609" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="327-Ky-IV0"/>
@@ -66,7 +66,7 @@
                     <navigationItem key="navigationItem" title="A Random Joke !!!" id="a0G-LP-iaT">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="7ak-C4-MnT">
                             <connections>
-                                <segue destination="G7m-Ql-1gc" kind="show" id="qIB-Dw-GJ6"/>
+                                <action selector="btnSearchTappedWithButton:" destination="BYZ-38-t0r" id="bUz-fb-36u"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,48 +76,78 @@
                         <outlet property="activityIndicator" destination="ozM-nR-HRU" id="6r5-z1-tnN"/>
                         <outlet property="btnNext" destination="tZE-a2-zGu" id="bDC-uM-3tl"/>
                         <outlet property="jokeTextView" destination="L2x-W3-Ean" id="i3v-hy-0Xx"/>
+                        <segue destination="JrS-Nw-sCK" kind="show" identifier="jokeSearch" id="m7F-ax-9n5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="126.38680659670166"/>
+            <point key="canvasLocation" x="1062" y="126"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="4U7-cN-NBD">
+        <!--A Random Joke !!!-->
+        <scene sceneID="nlT-ua-Hbm">
             <objects>
-                <viewController id="G7m-Ql-1gc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YOm-ig-qAc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController title="A Random Joke !!!" id="JrS-Nw-sCK" customClass="RandomJokeSearchVC" customModule="DadJokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vPP-fF-g4o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="kIT-j5-j8e">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Why didn’t the skeleton cross the road? Because he had no guts." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aLl-71-w8o">
+                                <rect key="frame" x="67" y="269" width="185" height="211"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.3411764706" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textView"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="bQI-jz-eJa">
+                                <rect key="frame" x="141.5" y="211" width="37" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="tsA-YK-Zqr"/>
+                                    <constraint firstAttribute="width" constant="37" id="kBe-5s-fwu"/>
+                                    <constraint firstAttribute="height" constant="37" id="yza-w7-rKT"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gqR-hb-RIg">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-sC-L5X">
+                                <rect key="frame" x="91" y="106" width="138" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="0.1843137255" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="uVU-uw-f7k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextTappedWithButton:" destination="JrS-Nw-sCK" eventType="touchUpInside" id="uCL-IE-bMD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686269999999" green="0.3411764706" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FOb-dM-RCY" firstAttribute="trailing" secondItem="gqR-hb-RIg" secondAttribute="trailing" id="3Sk-bd-R86"/>
-                            <constraint firstItem="FOb-dM-RCY" firstAttribute="trailing" secondItem="kIT-j5-j8e" secondAttribute="trailing" id="AJ6-pR-qe9"/>
-                            <constraint firstItem="kIT-j5-j8e" firstAttribute="top" secondItem="FOb-dM-RCY" secondAttribute="top" id="Jcc-iw-hfl"/>
-                            <constraint firstItem="FOb-dM-RCY" firstAttribute="bottom" secondItem="gqR-hb-RIg" secondAttribute="bottom" id="S5u-5E-ssU"/>
-                            <constraint firstItem="gqR-hb-RIg" firstAttribute="leading" secondItem="FOb-dM-RCY" secondAttribute="leading" id="XPA-rM-aGt"/>
-                            <constraint firstItem="kIT-j5-j8e" firstAttribute="leading" secondItem="FOb-dM-RCY" secondAttribute="leading" id="aXg-ew-cb2"/>
-                            <constraint firstItem="gqR-hb-RIg" firstAttribute="top" secondItem="FOb-dM-RCY" secondAttribute="top" constant="56" id="xen-wK-un1"/>
+                            <constraint firstItem="aLl-71-w8o" firstAttribute="leading" secondItem="Moh-ao-ciR" secondAttribute="leading" constant="67" id="GNK-iX-QcA"/>
+                            <constraint firstItem="Moh-ao-ciR" firstAttribute="bottom" secondItem="aLl-71-w8o" secondAttribute="bottom" id="Mz8-KO-U6K"/>
+                            <constraint firstItem="RLi-sC-L5X" firstAttribute="leading" secondItem="Moh-ao-ciR" secondAttribute="leading" constant="91" id="TWe-h1-RUt"/>
+                            <constraint firstItem="Moh-ao-ciR" firstAttribute="trailing" secondItem="aLl-71-w8o" secondAttribute="trailing" constant="68" id="gnE-Qh-8N6"/>
+                            <constraint firstItem="aLl-71-w8o" firstAttribute="top" secondItem="Moh-ao-ciR" secondAttribute="top" constant="205" id="mjP-0k-lce"/>
+                            <constraint firstItem="aLl-71-w8o" firstAttribute="top" secondItem="bQI-jz-eJa" secondAttribute="bottom" constant="21" id="n4n-mn-3hn"/>
+                            <constraint firstItem="bQI-jz-eJa" firstAttribute="centerX" secondItem="Moh-ao-ciR" secondAttribute="centerX" id="nEa-Iu-fOI"/>
+                            <constraint firstItem="Moh-ao-ciR" firstAttribute="trailing" secondItem="RLi-sC-L5X" secondAttribute="trailing" constant="91" id="xgX-lO-clf"/>
+                            <constraint firstItem="RLi-sC-L5X" firstAttribute="top" secondItem="Moh-ao-ciR" secondAttribute="top" constant="42" id="yJH-zc-HxR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="FOb-dM-RCY"/>
+                        <viewLayoutGuide key="safeArea" id="Moh-ao-ciR"/>
                     </view>
+                    <navigationItem key="navigationItem" title="A Random Joke !!!" id="qvJ-BW-bQl"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="bQI-jz-eJa" id="SgP-Uc-8gy"/>
+                        <outlet property="btnNext" destination="RLi-sC-L5X" id="TE2-7J-uw2"/>
+                        <outlet property="jokeTextView" destination="aLl-71-w8o" id="mwT-FI-rPK"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ws8-ol-Hrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TrD-oL-PCT" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1784.8" y="127.28635682158921"/>
+            <point key="canvasLocation" x="1766" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oh3-TC-Emu">
@@ -125,7 +155,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ub-oa-5t0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5ZT-ei-eIt">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0039215686269999999" green="0.3411764706" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.1843137255" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
