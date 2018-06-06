@@ -1,6 +1,0 @@
-framework module Pods_DadJokesUITests {
-  umbrella header "Pods-DadJokesUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
